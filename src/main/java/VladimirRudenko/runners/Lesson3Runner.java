@@ -1,4 +1,4 @@
-package VladimirRudenko.app.utils.runners;
+package VladimirRudenko.runners;
 
 import VladimirRudenko.app.utils.convertors.PrimitiveConvertor;
 public class Lesson3Runner {
@@ -7,10 +7,10 @@ public class Lesson3Runner {
         PrimitiveConvertor castingFloatToChar = new PrimitiveConvertor();
         castingFloatToChar.floatToChar();
 
-        PrimitiveConvertor castingIntToChar = new PrimitiveConvertor();
-        castingIntToChar.intToChar();
 
-        PrimitiveConvertor castingCharToInt = new PrimitiveConvertor();
-        castingCharToInt.charToInt();
+        castingFloatToChar.intToChar();
+
+
+        castingFloatToChar.charToInt();
     }
 }
