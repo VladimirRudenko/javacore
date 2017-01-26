@@ -6,7 +6,7 @@ package VladimirRudenko.app.classwork.lesson3;
 public class MathFunc {
     public class multiply(int a, int b)
     {
-        return a * b
+        return a * b;
     }
 }
 

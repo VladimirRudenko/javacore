@@ -2,6 +2,7 @@
 *.iws
 *.iml
 /out/
+/target/
 .DS_Store*
 ehthumbs.db
 Icon?
