@@ -10,16 +10,16 @@ import static java.util.Scanner.*;
  * Created by vladimir on 26.01.17.
  */
 public class Triangle {
-    public static void main(String args[]){
+    public static void calculateIfTriangeRightAngle() {
         System.out.println("Ввести сторону a");
         Scanner scanner = new Scanner(System.in);
-        double a = Scanner.nextDouble();
+        double a = scanner.nextDouble();
         System.out.println("Ввести сторону b");
-        Scanner scanner = new Scanner(System.in);
-        double b = Scanner.nextDouble();
+
+        double b = scanner.nextDouble();
         System.out.println("Ввести сторону c");
-        Scanner scanner = new Scanner(System.in);
-        double c = Scanner.nextDouble();
+
+        double c = scanner.nextDouble();
 
         if ((a * a == b*b + c*c)|| (c*c == a*a + b*b)|| (b*b == a*a + c*c))
         {
