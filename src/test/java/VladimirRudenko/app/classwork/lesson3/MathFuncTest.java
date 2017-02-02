@@ -9,9 +9,11 @@ import org.junit.Test;
 public class MathFuncTest {
 
     @Test
-    public void multiply(){
+    public void add(){
          MathFunc mathFunc = new MathFunc();
 
-         Assert.assertEquals(6,mathFunc.multiply(2,3));
+         Assert.assertEquals(6, mathFunc.add());
+
+
      }
 }

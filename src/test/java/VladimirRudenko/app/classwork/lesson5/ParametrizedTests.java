@@ -7,12 +7,10 @@ import junitparams.mappers.CsvWithHeaderMapper;
 import org.junit.*;
 import org.junit.runner.RunWith;
 
-import static VladimirRudenko.app.classwork.lesson3.MathFunc.*;
-
 /**
  * Created by vladimir on 30.01.17.
  */
-@RunWith(JUnitParamsRunner.class)
+/*@RunWith(JUnitParamsRunner.class)
 public class ParametrizedTests {
     MathFunc mathFunc;
 
@@ -24,7 +22,7 @@ public class ParametrizedTests {
     @Test
     @FileParameters(value = "src/test/resources/multiplyData.csv", mapper = CsvWithHeaderMapper.class)
     public void multiplyTest(int a, int b, int expected){
-        Assert.assertEquals(expected, MathFunc.multiply(a, b));
+        Assert.assertEquals(expected, MathFunc.multiply());
     }
 
-}
+}*/
