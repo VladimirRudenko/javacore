@@ -36,8 +36,8 @@ public class CalculatorTest {
     public void mult() {
         Calculator a = new Calculator();
         double res = a.mult(7,7);
-        if (res!=49) Assert.fail();
-        //Assert.assertEquals(49, res);
+       // if (res!=49) Assert.fail();
+        Assert.assertEquals(49, res, 0.2);
 
     }
 
