@@ -20,7 +20,10 @@ public class CircleArea2 {
 
         if (area1 > area2)
             System.out.println("Area1 is bigger");
-        else
+        else if (area1 < area2)
             System.out.println("Area2 is bigger");
+        else
+            System.out.println("Areys is equal");
+
     }
 }

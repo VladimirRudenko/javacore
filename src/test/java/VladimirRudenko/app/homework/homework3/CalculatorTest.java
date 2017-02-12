@@ -5,9 +5,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by vladimir on 30.01.17.
- */
+//*
+// * Created by vladimir on 30.01.17.
+
+
 
 public class CalculatorTest {
     @Test
@@ -17,9 +18,9 @@ public class CalculatorTest {
         if (res!=6) Assert.fail();
     }
 
-    }
 
-    @Test
+
+   @Test
     public void increment() {
         Calculator a = new Calculator();
         int res = a.increment(4);
@@ -27,21 +28,22 @@ public class CalculatorTest {
 
     }
 
-    @Test
+
+ @Test
     public void decrement()  {
-        public void increment() {
-            Calculator a = new Calculator();
-            int res = a.decrement(4);
+     Calculator a = new Calculator();
+            double res = a.decrement(4);
             if (res!=3) Assert.fail();
         }
 
-    @Test
+
+   @Test
     public void copySign(){
         Calculator a = new Calculator();
         float res = a.copySign(9.9f, -5.5f);
         if (res!= -9.9) Assert.fail();
-
     }
+
 
     @Test
     public void sin() {
@@ -77,12 +79,14 @@ public class CalculatorTest {
         double res = a.sqrt(7);
         if(res!=49) Assert.fail();
     }
-  /*  @Test
+
+ /* @Test
     public void max() {
         Calculator a = new Calculator();
-        float res = a.max(7,4);
+        double res = a.max(7,4);
         if (res!=7) Assert.fail();
     }*/
+
 
     @Test
     public void del() {

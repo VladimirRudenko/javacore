@@ -11,13 +11,13 @@ import static java.util.Scanner.*;
  */
 public class Triangle {
     public static void calculateIfTriangeRightAngle() {
-        System.out.println("Ввести сторону a");
+        System.out.println("Input side a");
         Scanner scanner = new Scanner(System.in);
         double a = scanner.nextDouble();
-        System.out.println("Ввести сторону b");
+        System.out.println("Input side b");
 
         double b = scanner.nextDouble();
-        System.out.println("Ввести сторону c");
+        System.out.println("Input side c");
 
         double c = scanner.nextDouble();
 

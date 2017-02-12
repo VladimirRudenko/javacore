@@ -19,7 +19,7 @@ public class Calculator {
     public float copySign (float a, float b) {return Math.copySign(a,b);}
 
     public int increment (int a) {return ++a;}
-    public int decrement (int a) {return --a;}
+    public double decrement (double a) {return --a;}
     public double max (double a, double b) {return Math.max(a,b);}
 
 }
