@@ -6,13 +6,14 @@ import java.util.Scanner;
  * Created by vladimir on 16.02.17.
  */
 public class PalindromeCaseInsensitive {
-    public static void main(String[] args) {
-
+    public static void main(String[] args)
+     {
 
         Scanner scanner = new Scanner(System.in);
 
-            System.out.println("Input a word");
-
+    {
+        System.out.println("Input a word");
+    }
         String str = scanner.nextLine();
         String reverse = "";
 
