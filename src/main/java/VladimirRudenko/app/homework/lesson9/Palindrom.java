@@ -5,24 +5,71 @@ import java.util.Scanner;
 /**
  * Created by vladimir on 16.02.17.
  */
-public class PalindromeCaseInsensitive {
-    public static void main(String[] args)
-     {
+public class Palindrom {
 
-        Scanner scanner = new Scanner(System.in);
-
-    {
-        System.out.println("Input a word");
+    public String palindromeCharAtMethod(String stringValue) {
+        stringValue = stringValue.toLowerCase();
+        String result = "";
+        for (int i = 0; i < stringValue.length() / 2; i++) {
+            if (stringValue.charAt(i) == stringValue.charAt(stringValue.length() - i - 1)) {
+                result = "Palindrome";
+            } else {
+                result = "Not palindrome";
+            }
+        }
+        return result;
     }
-        String str = scanner.nextLine();
+
+    public String palindromeToLowerCaseMethod(char[] charArray) {
+        String result = "";
+        int start = 0;
+        int end = charArray.length - 1;
+        while (start < end) {
+            if (Character.toLowerCase(charArray[start]) == Character.toLowerCase(charArray[end])) {
+                result = "Palindrome";
+            } else {
+                result = "Not palindrome";
+            }
+            ++start;
+            --end;
+        }
+        return result;
+    }
+
+    public String palindromeReverseMethod(String stringValue) {
+        stringValue = stringValue.toLowerCase();
+        String result;
+        if (stringValue.equals(new StringBuilder(stringValue).reverse().toString())) {
+            result = "Palindrome";
+        } else {
+            result = "Not palindrome";
+        }
+        return result;
+    }
+
+    public String palindromeEqualsIgnoreMethod(String stringValue) {
+        String result;
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(stringValue);
+        stringBuilder.reverse();
+        if (stringValue.equalsIgnoreCase(stringBuilder.toString())) {
+            result = "Palindrome";
+        } else {
+            result = "Not palindrome";
+        }
+        return result;
+    }
+
+    public String palindromeReverseCharAtMethod(String stringValue) {
+        String result;
         String reverse = "";
-
-        for (int i = str.length() - 1; i >= 0; i--)
-        reverse += str.charAt(i);
-
-        if (reverse.equalsIgnoreCase(str))
-            System.out.println("Palindrome");
-         else
-            System.out.println("Not palindrome");
+        for (int i = stringValue.length() - 1; i >= 0; i--) {
+            reverse = reverse + stringValue.charAt(i);
+        }
+        if (stringValue.equalsIgnoreCase(reverse))
+            result = "Palindrome";
+        else
+            result = "Not palindrome";
+        return result;
     }
 }
